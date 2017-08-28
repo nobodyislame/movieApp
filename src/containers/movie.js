@@ -36,6 +36,16 @@ class Movie extends Component{
               <h4>Awards</h4>
               <p>{this.props.movie.Awards}</p>
               <h4>Ratings</h4>
+              <span>
+                {this.props.movie.Ratings[0].Source} &nbsp;
+                <span className="label label-warning">
+                  {this.props.movie.Ratings[0].Value}
+                </span> &nbsp;
+                {this.props.movie.Ratings[1].Source} &nbsp;
+                <span className="label label-danger">
+                  {this.props.movie.Ratings[1].Value}
+                </span>
+              </span>
             </div>
           </div>
         </div>
